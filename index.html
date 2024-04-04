@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculator BMI RevoU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container for calculator BMI -->
+    <header>
+      <h1>BMI Calculator Mario</h1>
+      <br />
+      <p class="description">
+        Berat Badan Ideal adalah impian setiap orang. Tidak hanya memiliki bentuk tubuh yang 
+        menunjang penampilan, berat badan ideal berarti menandakan kondisi tubuh yang sehat.
+        Bagaimana dengan anda? Mari hitung sekarang dengan menggunakan kalkulator BMI.
+      </p>
+    </header>
+    <div class="container">
+      <!-- Container for BMI form -->
+      <form action="index.html" class="question" onsubmit="submitForm(event)">
+        <div class="gender">
+          <p><b>Jenis Kelamin</b></p>
+          <div class="gender-option">
+            <input type="radio" id="laki-laki" name="gender" value="Laki-laki" />
+            <label class="label" for="laki-laki">Laki-laki</label>
+
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" />
+            <label class="label" for="perempuan">Perempuan</label>
+          </div>
+        </div>
+        <div class="usia">
+          <p><b>Usia</b></p>
+          <div class="input-number"><input type="number" id="usia" name="usia" min="0" /></div>
+        </div>
+        <div class="berat">
+          <p><b>Berat Badan (Kg)</b></p>
+          <div class="input-number">
+            <input type="number" id="berat" name="berat" />
+          </div>
+        </div>
+        <div class="tinggi">
+          <p><b>Tinggi Badan (cm)</b></p>
+          <div class="input-number">
+            <input type="number" id="tinggi" name="tinggi" />
+          </div>
+        </div>
+
+        <input type="submit" class="submit" id="btn" value="Hitung BMI" />
+        <input type="reset" class="reset" value="Reset" />
+        <h5>
+          <i>PERHATIAN! Tekan Tombol <b>"Hitung BMI"</b> 2x jika hasil belum muncul!</i>
+        </h5>
+      </form>
+
+      <!-- Container for result -->
+      <div id="result" class="result">
+        <h2>Hasil Perhitungan BMI</h2>
+        <br />
+        <label for="output" id="bmilabel"> </label>
+        <div id="output">---</div>
+        <br />
+        <div id="kategori">---</div>
+        <br />
+
+        <br />
+        <br />
+        <a class="konsultasi" href="" target="_blank">Download Hasil BMI </a>
+      </div>
+    </div>
+    <h3 align="center">Penjelasan</h3>
+    <div id="deskripsi">---</div>
+    <br />
+    <div align="center">
+      <a
+        class="konsultasi"
+        href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=426fb851-f268-4332-8aa3-52c0ff78c27f&category_name=Ahli%20Gizi"
+        target="_blank"
+        >Konsultasi Gizi
+      </a>
+      <a
+        class="konsultasi"
+        href="https://www.halodoc.com/tanya-dokter/cari?source=com.halodoc.bmicalculator&category_id=426fb851-f268-4332-8aa3-52c0ff78c27f&category_name=Ahli%20Gizi"
+        target="_blank"
+        >Daftar Konsultasi
+      </a>
+    </div>
+    <br />
+  </body>
+  <script src="script.js"></script>
+</html>
